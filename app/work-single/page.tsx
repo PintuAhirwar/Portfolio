@@ -7,7 +7,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Helper to turn names into safe folder slugs
-const slugify = (str) =>
+const slugify = (str: string): string =>
     str
         .toLowerCase()
         .replace(/[()]/g, "")
