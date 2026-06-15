@@ -3,7 +3,7 @@ import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import Contact1 from "@/components/sections/Contact1"
 import Static1 from "@/components/sections/Static1"
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Helper to turn names into safe folder slugs
