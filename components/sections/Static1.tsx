@@ -57,6 +57,10 @@ export default function Static1() {
 						</div>
 					</div>
 				</div>
+				<div 
+        className="position-absolute bottom-0 start-0 w-100" 
+        style={{ height: "1px", background: "#6d4df2" }} 
+    />
 			</div>
 
 		</>

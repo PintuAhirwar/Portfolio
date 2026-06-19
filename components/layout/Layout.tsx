@@ -110,7 +110,7 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
             <ImageHoverEffects />
             {!headerStyle && <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} isOffCanvas={isOffCanvas} handleOffCanvas={handleOffCanvas} />}
             {headerStyle == 1 ? <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} isOffCanvas={isOffCanvas} handleOffCanvas={handleOffCanvas} /> : null}
-            <MobileMenu />
+            <MobileMenu isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} />
 
             <main className="main">
                 {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}

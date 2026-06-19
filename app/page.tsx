@@ -9,6 +9,7 @@ import Static1 from "@/components/sections/Static1"
 import Resume1 from "@/components/sections/Resume1"
 import Testimonials1 from "@/components/sections/Testimonials1"
 import GithubStats from "@/components/sections/GithubStats"
+import AboutMe from "@/components/sections/AboutMe"
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
 			<Layout headerStyle={1} footerStyle={1}>
 				<Home1 />
 				<Static1 />
+				<AboutMe />
 				<Service1 />
 				<Projects1 />
 				<Resume1 />
