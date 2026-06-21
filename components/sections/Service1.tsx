@@ -25,7 +25,7 @@ export default function Service1() {
 
             {/* 01 - Full Stack Development */}
             <div className="col-12">
-                <div className="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3" data-fx={1} data-img="assets/imgs/services/services-1/img-1.png">
+                <div className="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3" data-fx={1} data-img="assets/imgs/services/services-1/fullstack.png">
                     <div className="service-card-details d-lg-flex align-items-center">
                         <h3 className="service-card-title w-lg-50 w-100 mb-0">
                             <Link href="/work-single">
@@ -48,7 +48,7 @@ export default function Service1() {
 
             {/* 02 - Graphic Design */}
             <div className="col-12">
-                <div className="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3" data-fx={1} data-img="assets/imgs/services/services-1/img-2.png">
+                <div className="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3" data-fx={1} data-img="assets/imgs/services/services-1/graphic.png">
                     <div className="service-card-details d-lg-flex align-items-center">
                         <h3 className="service-card-title w-lg-50 w-100 mb-0">
                             <Link href="/work-single">
@@ -71,7 +71,7 @@ export default function Service1() {
 
             {/* 03 - Notes Design */}
             <div className="col-12">
-                <div className="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3" data-fx={1} data-img="assets/imgs/services/services-1/img-3.png">
+                <div className="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3" data-fx={1} data-img="assets/imgs/services/services-1/notesdesign.png">
                     <div className="service-card-details d-lg-flex align-items-center">
                         <h3 className="service-card-title w-lg-50 w-100 mb-0">
                             <Link href="/work-single">
@@ -94,7 +94,7 @@ export default function Service1() {
 
             {/* 04 - UI/UX Design */}
             <div className="col-12">
-                <div className="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3 border-bottom" data-fx={1} data-img="assets/imgs/services/services-1/img-4.png">
+                <div className="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3 border-bottom" data-fx={1} data-img="assets/imgs/services/services-1/uiux.png">
                     <div className="service-card-details d-lg-flex align-items-center">
                         <h3 className="service-card-title w-lg-50 w-100 mb-0">
                             <Link href="/work-single">

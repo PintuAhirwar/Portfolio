@@ -163,7 +163,7 @@ export default function WorkSingle() {
                                     </div>
                                 </div>
 
-                                <img src="/assets/imgs/work/img-background.png" alt="" />
+                                <img src="/assets/imgs/work/notes1.png" alt="" />
 
                                 {/* Description */}
                                 <div className="col-lg-10 mx-lg-auto mt-8">
@@ -177,17 +177,17 @@ export default function WorkSingle() {
                                     {notesGallery.map((group, idx) => (
                                         <div className="mb-8" key={idx}>
                                             <div className="d-flex align-items-center gap-3 mb-1 p-3 bg-6 rounded-3">
-    <img
-        className="icon_65 avatar rounded-circle"
-        src={`/assets/imgs/work/notes/${slugify(group.faculty)}/avatar.png`}
-        alt={group.faculty}
-        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
-    />
-    <div>
-        <h6 className="fw-semibold mb-0">{group.faculty}</h6>
-        <span className="text-primary-1 fs-7">{group.course}</span>
-    </div>
-</div>
+                                                <img
+                                                    className="icon_65 avatar rounded-circle"
+                                                    src={`/assets/imgs/work/notes/${slugify(group.faculty)}/avatar.png`}
+                                                    alt={group.faculty}
+                                                    onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+                                                />
+                                                <div>
+                                                    <h6 className="fw-semibold mb-0">{group.faculty}</h6>
+                                                    <span className="text-primary-1 fs-7">{group.course}</span>
+                                                </div>
+                                            </div>
                                             <p className="text-300 fs-7 mb-3">Includes: {group.subjects.join(", ")}</p>
                                             <Swiper {...gallerySwiperProps} className="gallery-swiper pb-6">
                                                 <div className="swiper-wrapper">

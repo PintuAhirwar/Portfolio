@@ -36,7 +36,7 @@ export default function Work() {
                                         <div className="card-custom" data-index={6}>
                                             <div className="card__inner bg-6 p-lg-6 p-md-4 p-3">
                                                 <div className="card__image-container zoom-img position-relative">
-                                                    <img className="card__image" src="/assets/imgs/work/img-3.png" alt="Notes Design" />
+                                                    <img className="card__image" src="/assets/imgs/work/notes.png" alt="Notes Design" />
                                                     <Link href="/work-single" className="card-image-overlay position-absolute start-0 end-0 w-100 h-100" />
                                                 </div>
                                                 <div className="card__content px-md-4 px-3">
@@ -70,7 +70,7 @@ export default function Work() {
                                         <div className="card-custom" data-index={0}>
                                             <div className="card__inner bg-6 p-lg-6 p-md-4 p-3">
                                                 <div className="card__image-container zoom-img position-relative">
-                                                    <img className="card__image" src="/assets/imgs/work/img-1.png" alt="Classroom" />
+                                                    <img className="card__image" src="/assets/imgs/work/back.png" alt="Classroom" />
                                                     <Link href="https://classroom-frontend-24i8.onrender.com" target="_blank" className="card-image-overlay position-absolute start-0 end-0 w-100 h-100" />
                                                 </div>
                                                 <div className="card__content px-md-4 px-3">
@@ -118,7 +118,7 @@ export default function Work() {
                                         <div className="card-custom" data-index={2}>
                                             <div className="card__inner bg-6 p-lg-6 p-md-4 p-3">
                                                 <div className="card__image-container zoom-img position-relative">
-                                                    <img className="card__image" src="/assets/imgs/work/img-3.png" alt="Sarthak Jain CA" />
+                                                    <img className="card__image" src="/assets/imgs/work/sj.png" alt="Sarthak Jain CA" />
                                                     <Link href="https://sarthakjainca.com" target="_blank" className="card-image-overlay position-absolute start-0 end-0 w-100 h-100" />
                                                 </div>
                                                 <div className="card__content px-md-4 px-3">
@@ -152,7 +152,7 @@ export default function Work() {
                                         <div className="card-custom" data-index={3}>
                                             <div className="card__inner bg-6 p-lg-6 p-md-4 p-3">
                                                 <div className="card__image-container zoom-img position-relative">
-                                                    <img className="card__image" src="/assets/imgs/work/img-4.png" alt="Leads Dashboard" />
+                                                    <img className="card__image" src="/assets/imgs/work/lead.png" alt="Leads Dashboard" />
                                                     <Link href="/work-single" className="card-image-overlay position-absolute start-0 end-0 w-100 h-100" />
                                                 </div>
                                                 <div className="card__content px-md-4 px-3">
@@ -186,7 +186,7 @@ export default function Work() {
                                         <div className="card-custom" data-index={4}>
                                             <div className="card__inner bg-6 p-lg-6 p-md-4 p-3">
                                                 <div className="card__image-container zoom-img position-relative">
-                                                    <img className="card__image" src="/assets/imgs/work/img-1.png" alt="FAST Education" />
+                                                    <img className="card__image" src="/assets/imgs/work/fast.png" alt="FAST Education" />
                                                     <Link href="https://fast.edu.in" target="_blank" className="card-image-overlay position-absolute start-0 end-0 w-100 h-100" />
                                                 </div>
                                                 <div className="card__content px-md-4 px-3">
@@ -220,7 +220,7 @@ export default function Work() {
                                         <div className="card-custom" data-index={5}>
                                             <div className="card__inner bg-6 p-lg-6 p-md-4 p-3">
                                                 <div className="card__image-container zoom-img position-relative">
-                                                    <img className="card__image" src="/assets/imgs/work/img-2.png" alt="Social Media" />
+                                                    <img className="card__image" src="/assets/imgs/work/graphic.png" alt="Social Media" />
                                                     <Link href="/work-single" className="card-image-overlay position-absolute start-0 end-0 w-100 h-100" />
                                                 </div>
                                                 <div className="card__content px-md-4 px-3">

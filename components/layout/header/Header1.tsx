@@ -8,13 +8,21 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isOffC
     return (
         <>
             <header>
-                <nav className={`navbar navbar-expand-lg navbar-light w-100 flex-nowrap z-999 p-0 ${scroll ? "navbar-stick" : ""}`} style={{ position: `${scroll ? "fixed" : "relative"}`, top: `${scroll ? "0" : "auto"}` }}>
+                <nav 
+                    className={`navbar navbar-expand-lg navbar-light w-100 flex-nowrap z-999 p-0 ${scroll ? "navbar-stick" : ""}`} 
+                    style={{ 
+                        position: scroll ? "fixed" : "relative", 
+                        top: scroll ? "0" : "auto",
+                        left: 0,
+                        right: 0
+                    }}
+                >
                     <a href="#" className="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info" onClick={handleOffCanvas}>
                         <i className="ri-menu-2-line" />
                     </a>
                     <div className="container py-3 px-0">
                         <Link className="navbar-brand d-flex main-logo align-items-center ms-lg-0 ms-md-5 ms-3" href="/">
-                            <img src="/assets/imgs/template/favicon.svg" alt="infinia" />
+                            <img src="/assets/imgs/template/favicon.svg" alt="PA" style={{ width: "40px", height: "40px", objectFit: "contain" }} />
                             <span className="fs-4 ms-2">Pintu Ahirwar</span>
                         </Link>
                         <div className="d-none d-lg-flex">
@@ -46,6 +54,9 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isOffC
                     </div>
                     <ThemeSwitch />
                 </nav>
+
+                {scroll && <div style={{ height: "80px" }} />}
+                
                 <OffCanvas isOffCanvas={isOffCanvas} handleOffCanvas={handleOffCanvas} />
                 <MobileMenu isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} />
             </header>

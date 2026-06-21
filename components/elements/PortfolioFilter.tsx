@@ -2,25 +2,31 @@
 import Isotope from "isotope-layout"
 import Link from "next/link"
 import { useCallback, useEffect, useRef, useState } from "react"
+import imagesLoaded from "imagesloaded"
 
 export default function PortfolioFilter() {
 	// Isotope
 	const isotope = useRef<Isotope | null>(null)
+	const containerRef = useRef<HTMLDivElement | null>(null)
 	const [filterKey, setFilterKey] = useState<string>("*")
 
 	useEffect(() => {
-		const timeout = setTimeout(() => {
-			isotope.current = new Isotope(".masonry-active", {
-				itemSelector: ".filter-item",
-				percentPosition: true,
-				masonry: {
-					columnWidth: ".filter-item",
-				},
+		if (containerRef.current){
+			imagesLoaded(containerRef.current, () => {
+				isotope.current = new Isotope(containerRef. current!, {
+					itemSelector: ".filter-item",
+					percentPosition: true,
+					masonry: {
+						columnWidth: ".filter-item",
+					},
+				})
 			})
-		}, 1000)
+		}
 
 		// Cleanup on unmount
-		return () => clearTimeout(timeout)
+		return () => {
+			isotope.current?.destroy()
+		}
 	}, [])
 
 	useEffect(() => {
@@ -48,13 +54,13 @@ export default function PortfolioFilter() {
 						<button className={activeBtn("ui")} onClick={handleFilterKeyChange("ui")}>UI/UX</button>
 					</div>
 				</div>
-				<div className="row masonry-active justify-content-between mt-6">
+				<div className="row masonry-active justify-content-between mt-6" ref = {containerRef}>
 					<div className="grid-sizer" />
 					{/* 1 - Classroom Frontend */}
 					<div className="filter-item col-lg-6 col-12 webdev ui">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="https://classroom-frontend-24i8.onrender.com" target="_blank">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/img-1.png" alt="Classroom" />
+								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/classroomfrontend.png" alt="Classroom" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="https://classroom-frontend-24i8.onrender.com" target="_blank" className="project-card-content">
@@ -72,7 +78,7 @@ export default function PortfolioFilter() {
 					<div className="filter-item col-lg-6 col-12 webdev">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="https://classroom-backend-dvcd.onrender.com/admin/" target="_blank">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/img-2.png" alt="Classroom Backend" />
+								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/classroombackend.png" alt="Classroom Backend" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="https://classroom-backend-dvcd.onrender.com/admin/" target="_blank" className="project-card-content">
@@ -90,7 +96,7 @@ export default function PortfolioFilter() {
 					<div className="filter-item col-lg-6 col-12 webdev ui">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="https://sarthakjainca.com" target="_blank">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/img-3.png" alt="Sarthak Jain CA" />
+								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/sj.png" alt="Sarthak Jain CA" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="https://sarthakjainca.com" target="_blank" className="project-card-content">
@@ -108,7 +114,7 @@ export default function PortfolioFilter() {
 					<div className="filter-item col-lg-6 col-12 webdev">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="/work-single">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/img-4.png" alt="Leads Dashboard" />
+								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/leadcode.png" alt="Leads Dashboard" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="/work-single" className="project-card-content">
@@ -126,7 +132,7 @@ export default function PortfolioFilter() {
 					<div className="filter-item col-lg-6 col-12 graphic ui">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="https://fast.edu.in" target="_blank">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/img-1.png" alt="FAST Education" />
+								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/fast.png" alt="FAST Education" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="https://fast.edu.in" target="_blank" className="project-card-content">
@@ -144,7 +150,7 @@ export default function PortfolioFilter() {
 					<div className="filter-item col-lg-6 col-12 graphic">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="/work-single">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/img-2.png" alt="Social Media Design" />
+								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/socialmedia.png" alt="Social Media Design" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="/work-single" className="project-card-content">
@@ -162,7 +168,7 @@ export default function PortfolioFilter() {
 					<div className="filter-item col-lg-6 col-12 notes">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="/work-single">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/img-3.png" alt="Notes Design" />
+								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/notes.png" alt="Notes Design" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="/work-single" className="project-card-content">

@@ -27,6 +27,11 @@ export default function Menu() {
 						Contact
 					</Link>
 				</li>
+				<li className="nav-item">
+					<Link href="/#about" className="nav-link">
+						About
+					</Link>
+				</li>
 			</ul>
 		</>
 	)

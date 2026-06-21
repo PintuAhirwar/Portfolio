@@ -89,19 +89,23 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
             setTimeout(initWOW, 100);
         }
 
+
+        let ticking = false;
         const handleScroll = (): void => {
-            const scrollCheck: boolean = window.scrollY > 100;
-            if (scrollCheck !== scroll) {
-                setScroll(scrollCheck);
-            }
-        };
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const scrollCheck: boolean = window.scrollY > 100;
+                    setScroll(scrollCheck);
+                    ticking = false;
+            });
+            ticking = true;
+        }};
 
         document.addEventListener("scroll", handleScroll);
-
         return () => {
             document.removeEventListener("scroll", handleScroll);
         };
-    }, [scroll]);
+    }, []);
     return (
         <>
             <div id="top" />

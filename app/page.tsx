@@ -18,7 +18,6 @@ export default function Home() {
 			<Layout headerStyle={1} footerStyle={1}>
 				<Home1 />
 				<Static1 />
-				<AboutMe />
 				<Service1 />
 				<Projects1 />
 				<Resume1 />

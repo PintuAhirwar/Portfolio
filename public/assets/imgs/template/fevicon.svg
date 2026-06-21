@@ -4,7 +4,7 @@
 	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:none;}
-	.st1{fill:#7D5FF8;stroke:#FFFFFF;stroke-width:5.76;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#7D5FF8;stroke-width:5.76;stroke-miterlimit:10;}
 </style>
 <g>
 	<path class="st0" d="M75.31,7.81c34.39,0,62.27,27.81,62.27,62.12s-27.88,62.12-62.27,62.12c-34.39,0-62.26-27.81-62.26-62.12
@@ -17,10 +17,10 @@
 				c-9.76-5.09-16.66-11.89-22.6-19.14c-3.48-4.25-7.75-7.6-10.21-12.57c-0.88-1.79-3.28,0.45-4.02-1.42
 				c-3.24-8.23-5.02-17.2-5.02-26.58c0-40.09,32.5-72.59,72.59-72.59S147.48,34.98,147.48,75.07z"/>
 		</defs>
-		<clipPath id="SVGID_00000036240163269331914160000015599335854337769094_">
+		<clipPath id="SVGID_00000125580489016591248530000008698521520610304137_">
 			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 		</clipPath>
-		<g style="clip-path:url(#SVGID_00000036240163269331914160000015599335854337769094_);">
+		<g style="clip-path:url(#SVGID_00000125580489016591248530000008698521520610304137_);">
 			
 				<image style="overflow:visible;" width="1122" height="1402" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABGIAAAV6CAYAAACmwdrdAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF
 yWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0w

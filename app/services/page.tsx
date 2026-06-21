@@ -46,7 +46,7 @@ export default function Services() {
                                                         </Link>
                                                     </div>
                                                     <div className="card__image-container zoom-img position-relative">
-                                                        <img className="card__image" src="/assets/imgs/services-list/img-1.png" alt="" />
+                                                        <img className="card__image" src="/assets/imgs/services-list/fullstack.png" alt="" />
                                                     </div>
                                                     <div className="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
                                                         <div className="d-md-flex content">
@@ -78,7 +78,7 @@ export default function Services() {
                                                         </Link>
                                                     </div>
                                                     <div className="card__image-container zoom-img position-relative">
-                                                        <img className="card__image" src="/assets/imgs/services-list/img-2.png" alt="" />
+                                                        <img className="card__image" src="/assets/imgs/services-list/graphic.png" alt="" />
                                                     </div>
                                                     <div className="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
                                                         <div className="d-md-flex content">
@@ -110,7 +110,7 @@ export default function Services() {
                                                         </Link>
                                                     </div>
                                                     <div className="card__image-container zoom-img position-relative">
-                                                        <img className="card__image" src="/assets/imgs/services-list/img-3.png" alt="" />
+                                                        <img className="card__image" src="/assets/imgs/services-list/notes.png" alt="" />
                                                     </div>
                                                     <div className="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
                                                         <div className="d-md-flex content">
@@ -142,7 +142,7 @@ export default function Services() {
                                                         </Link>
                                                     </div>
                                                     <div className="card__image-container zoom-img position-relative">
-                                                        <img className="card__image" src="/assets/imgs/services-list/img-4.png" alt="" />
+                                                        <img className="card__image" src="/assets/imgs/services-list/uiux.png" alt="" />
                                                     </div>
                                                     <div className="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
                                                         <div className="d-md-flex content">
